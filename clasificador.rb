@@ -5,12 +5,13 @@
 # más de 15 letras - "muy larga"
 
 text = gets.chomp
+text_length = text.size
 
-if text.size <= 4 
+if text_length <= 4 
     puts "la palabra es pequeña"
-elsif text.size < 10
+elsif text_length < 10
     puts "la palabra es mediana"
-elsif text.size < 15
+elsif text_length < 15
     puts "la palabra es larga"
 else
     puts "la palabra es muy larga"
